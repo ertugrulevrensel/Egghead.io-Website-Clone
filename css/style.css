@@ -1,0 +1,320 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    background: rgb(17,24,39);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+                            /* ------------------------------------------------------------------------------ */
+
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.inlineblock{
+    display: inline-block;
+}
+.pos-absolute{
+    position: absolute;                     /* Bu itemi yok sayar. İç içe nesne konulmasına imkan verir */
+}
+.grid{
+    display: grid;
+}
+.items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.full-width{
+    width: 100%;
+}
+.full-height{
+    height: 100%;
+}
+.flex-d-col{
+    flex-direction: column;                 /* Satır satır sıralıyor */
+}
+.flex-d-row{
+    flex-direction: row;
+}
+.color-white{
+    color: white;
+}
+.gap16px{
+    gap: 16px;
+}
+.pad2rem{
+    padding: 2rem;
+}
+.font-1563{
+    font-size: 1.563em;
+}
+.text-bold{
+    font-weight: 700;
+}
+.pointer{
+    cursor: pointer;
+}
+
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: rgba(17,24,39);
+    border-bottom: solid;
+    border-color: rgb(31,41,55);
+    border-width: 1px;
+}
+.header .container{
+    height: 64px;
+}
+.header .logo{
+   margin-right: 40px; 
+   font-size: 14px;
+}
+.header .menu ul li button:hover {
+    color: #fff;
+}
+.header .search {
+    height: 38px;
+    width: 448px;
+}
+.header .search input:focus{
+border-color: rgb(59,130,246);
+}
+.header .search input {
+    background-color: rgba(31,41,55);
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55,65,81);
+    border-radius: 4px;
+    color: white;
+    /* border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;    */
+    
+}
+.header .search .searchicon img {
+    width: 22px;
+    height: 22px;
+    /* border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; */
+    background-color: rgba(31,41,55);    
+}
+.header .search .searchicon {
+    width: 22px;
+    height: 38px;
+    padding-left: 12px;
+}
+.header .search input::placeholder{
+    color:rgba(255, 255, 255, .65);
+}
+.header .menu .button {
+    background: rgb(17,24,39);
+    color: white;
+    padding: 8px 16px 8px 16px;
+    height: 40px;
+    margin: 5px;
+}
+#browse{
+    margin: 20px;
+}
+#blueback{
+    background-color: rgb(37,99,235);
+    border-radius: 4px;
+}
+#blueback:hover{
+    background-color: rgb(0, 70, 221);
+}
+.header .menu .button:hover{
+    background-color: rgb(31,41,55);
+    border-radius: 4px;
+}
+.header .menus{
+    margin-left: auto;
+}
+.hr{
+    margin: auto;
+    box-shadow: none;
+}
+
+                                                    /* Header Sonu*/
+
+#whatsNew{
+    margin-top: 32px;
+}
+#whatsNews{
+margin-bottom: 12px;
+font-size: 1.563em;
+display: block;
+}
+
+#first-body{
+    background: linear-gradient(160deg,#06193f,#164ea8);
+    border-radius: 8px;
+    padding: 64px 52px 64px 52px;           /* Saat yönünde (Top,Right,Bottom,Left) */
+}
+
+.right{
+    margin-left: 40px;
+}
+
+#first-right{
+    font-size: 3.052rem;
+    line-height: 1.1;                   /* Satır arası boşluklar */
+    font-weight: 800;                   /* Yazının Kalınlığı */
+    cursor: pointer;
+    color: white;
+    display: block;
+}
+#first-right:hover{
+    color: rgb(251,146,60);
+}
+.marginL20{
+    margin-left: 20px;
+}
+.marginT16{
+    margin-top: 16px;
+}
+.marginT12{
+    margin-top: 12px;
+}
+.marginB4{
+    margin-bottom: 4px;
+}
+.marginT4{
+    margin-top: 4px;
+}
+.marginB8{
+    margin-bottom: 8px;
+}
+.marginT16 img{
+    border-radius: 50%;
+}
+.right span{
+    display: flex;
+    align-items: center;
+}
+.text-white{
+    color: white;
+    line-height: 1.5;
+}
+
+                                                /* First body sonu */
+
+.grid-1{
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
+
+}
+.grid-back{
+    background-color: rgb(31,41,55);
+    border-radius: 8px;
+}
+.grid-1-h{
+    margin-top: 3.5rem;
+    font-weight: 700;
+    font-size: 1.563em;
+    line-height: 1.1;
+    margin: 56px 0px 8px 0px;
+}
+.grid-back:hover h2{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.grid-hover-blue:hover{
+    color: rgb(147,197,253);
+}
+.grid-back img{
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.grid-1-cell img{
+    width: 200px;
+    height: 200px;
+}
+.languages{
+    margin-top: 128px;
+}
+.lang-icon{
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+}
+.lang-icon img{
+    width: 64px;
+    height: 64px;
+}
+.lang-icon h1{
+    line-height: 1.25rem;
+}
+.pad-lang{
+    padding: 40px 24px 40px 24px;
+}

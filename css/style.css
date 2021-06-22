@@ -72,6 +72,9 @@ img {
 .pos-absolute{
     position: absolute;                     /* Bu itemi yok sayar. İç içe nesne konulmasına imkan verir */
 }
+.pos-relative{
+    position: relative; /* Position: Absolute için değer tutar. Absolute itemin konumu üstündeki Relative iteme göre ayarlanabilir */
+}
 .grid{
     display: grid;
 }
@@ -111,6 +114,9 @@ img {
 .pointer{
     cursor: pointer;
 }
+.font-125{
+    font-size: 1.25em;
+}
 
 
 .container{
@@ -127,12 +133,17 @@ img {
 .header .container{
     height: 64px;
 }
-.header .logo{
-   margin-right: 40px; 
-   font-size: 14px;
+.orange-background{
+    background: linear-gradient(90deg,#fb923c,#f97316);
+    height: 8px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-.header .menu ul li button:hover {
-    color: #fff;
+.first-body-logo{
+    width: 340px;
+    height: 340px;
 }
 .header .search {
     height: 38px;
@@ -174,7 +185,7 @@ border-color: rgb(59,130,246);
 .header .search input::placeholder{
     color:rgba(255, 255, 255, .65);
 }
-.header .menu .button {
+.header nav .button {
     background: rgb(17,24,39);
     color: white;
     padding: 8px 16px 8px 16px;
@@ -191,16 +202,12 @@ border-color: rgb(59,130,246);
 #blueback:hover{
     background-color: rgb(0, 70, 221);
 }
-.header .menu .button:hover{
+.header nav ul li .button:hover{
     background-color: rgb(31,41,55);
     border-radius: 4px;
 }
-.header .menus{
+.header .menu{
     margin-left: auto;
-}
-.hr{
-    margin: auto;
-    box-shadow: none;
 }
 
                                                     /* Header Sonu*/
@@ -255,6 +262,9 @@ display: block;
 }
 .marginT16 img{
     border-radius: 50%;
+}
+.marginR4{
+    margin-right: 4px;
 }
 .right span{
     display: flex;
